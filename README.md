@@ -1,6 +1,6 @@
 # themes by rachael
 
-this is where I keep all the code for my theme blog (https://rachaelthemes.com/). files in this repository are intended for use on rachaelthemes.com and should not be redistributed elsewhere.
+this is where I keep all the code for my theme blog (https://rachaelthemes.com/). files in this repository are intended for use *only* on rachaelthemes.com and should not be redistributed elsewhere. however, you may feel free to examine any code written in this repository as a learning tool.
 
 ## credits
 
