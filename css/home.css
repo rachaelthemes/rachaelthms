@@ -15,16 +15,16 @@ body.dark #intro {
 }
 
 .intro-text { 
-	width: 50%; 
+    width: 50%; 
 }
 
 .intro-text h1 { 
-	font-size: 3vw;
-	line-height: 1.375em; 
+    font-size: 3vw;
+    line-height: 1.375em; 
 }
 
 .intro-text h1 b { 
-	color: var(--blue); 
+    color: var(--blue); 
 }
 
 .est {
@@ -104,12 +104,12 @@ a.update.dead {
 #themes .themes {
     display: flex;
     flex-flow; row nowrap;
-	align-items: center;
-	justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #themes .themes.alt {
-	flex-flow: row-reverse nowrap;
+    flex-flow: row-reverse nowrap;
 }
 
 #themes.top-border {
