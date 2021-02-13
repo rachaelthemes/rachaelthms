@@ -1,3 +1,5 @@
+/* -- POSTS SECTION ------ */
+
 section#posts {
 	margin: 0 auto;
 	width: calc(100% - (var(--spacing)*2));
@@ -13,6 +15,9 @@ body.dark section#posts {
 	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
 }
 
+
+/* -- POSTS -------------- */
+
 article {
 	margin: 0 auto var(--spacing) auto;
 	background: var(--light);
@@ -26,6 +31,8 @@ article:last-child {
 	margin-bottom: 0;
 }
 
+/* -- LINKS -------------- */
+
 a.deactivated {
 	cursor: default !important;
 }
@@ -36,11 +43,17 @@ a.deactivated {
 	text-decoration: underline;
 }
 
+
+/* -- IMAGES ------------- */
+
 main img {
 	max-width: 100%;
 	margin: 0;
 	line-height: 0;
 }
+
+
+/* -- FORMATTING --------- */
 
 pre {
 	white-space: pre-wrap;
@@ -55,6 +68,20 @@ samp {
 	font-family: monospace, serif;
 	font-size: 1em;
 }
+
+.post-reblog blockquote,
+.post-caption blockquote {
+	border-left: 1px var(--lightish) solid;
+	margin: 1em 0 1em 0.25em;
+	padding-left: 30px;
+}
+
+article p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+/* -- REBLOG CHAINS ------ */
 
 .post-reblog-item {
 	padding: 30px 30px 10px 30px;
@@ -95,11 +122,6 @@ samp {
 	margin: 1em 0;
 }
 
-.post-quote .post-reblog-list,
-.post-chat .post-reblog-list {
-	display: none;
-}
-
 .post-reblog-item,
 .post-caption {
 	line-height: 1.6em;
@@ -109,9 +131,16 @@ samp {
 	padding: 5px 30px 0;
 }
 
+article:not(.has-date) .post-caption {
+	padding: 10px 30px 20px;
+}
+
 p.tmblr-attribution {
 	display: none !important;
 }
+
+
+/* -- HEADINGS ----------- */
 
 article h1,
 article h2 {
@@ -135,21 +164,15 @@ h2.post-title {
 	margin: .75em 0;
 }
 
-.post-reblog blockquote,
-.post-caption blockquote {
-	border-left: 1px var(--lightish) solid;
-	margin: 1em 0 1em 0.25em;
-	padding-left: 30px;
-}
 
-article:not(.has-date) .post-caption {
-	padding: 10px 30px 20px;
-}
+/* -- PHOTOS ----------- */
 
 article.post img {
 	max-width: 100%;
 	height: auto;
 }
+
+/* -- PHOTOSETS -------- */
 
 .photoset-container {
 	line-height: 0;
@@ -164,10 +187,69 @@ article div.npf_row {
 	line-height: 0 !important;
 }
 
-article p {
-	margin-block-start: 1em;
-	margin-block-end: 1em;
+
+/* -- NPF IMAGES --------- */ 
+/* -- by @glenthemes ----- */
+
+.npf_row {
+	margin-top: 0;
+	margin-left: calc(var(--NPF-Image-Spacing) * -2)!important;
+	margin-right: calc(var(--NPF-Image-Spacing) * -2)!important;
+	max-height: none!important;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
 }
+
+.tmblr-full {
+	margin: 0;
+	cursor: pointer;
+	display: flex!important;
+	align-items: center!important;
+}
+
+.tmblr-full[data-tumblr-attribution] {
+	display: block!important;
+}
+
+.tmblr-full img {
+	vertical-align: middle;
+}
+
+.npf_row_set .tmblr-full:first-of-type {
+	margin-left: calc(var(--NPF-Image-Spacing) * 2)!important;
+}
+
+.npf_row_set .tmblr-full {
+	margin-right: var(--NPF-Image-Spacing)!important;
+}
+
+.npf_row_set .tmblr-full:last-of-type {
+	margin-right: calc(var(--NPF-Image-Spacing) * 2)!important;
+}
+
+.tmblr-full img {
+	width: 100%;
+	height: auto;
+}
+
+.npf_row,
+.npf_row .tmblr-full {
+	padding: 0!important;
+}
+
+.npf_row_set,
+.npf_row_parent {
+	margin-bottom: var(--NPF-Image-Spacing);
+}
+
+.npf_row_set:last-of-type,
+.npf_row_parent:last-of-type {
+	margin-bottom: 0;
+}
+
+
+/* -- LINK POSTS --------- */
 
 a.link {
 	background: var(--blue);
@@ -226,6 +308,9 @@ a.link {
 	font-size: 0.875em;
 	line-height: 1.5;
 }
+
+
+/* -- ANSWER POSTS ------- */
 
 #question-container {
 	margin-bottom: -30px;
@@ -286,6 +371,9 @@ img.asker-avatar {
 	width: 48px;
 	height: 48px;
 }
+
+
+/* -- POST FOOTER -------- */
 
 .post-metadata {
 	width: calc(100% - 60px);
@@ -393,6 +481,9 @@ a.meta-item:hover {
 	color: #d75f45;
 }
 
+
+/* -- POST NOTES --------- */
+
 article.notes-container {
 	background: var(--light);
 	overflow: hidden;
@@ -445,6 +536,9 @@ ol.notes blockquote {
 ol.notes .note blockquote a {
 	font-weight: 400;
 }
+
+
+/* -- PAGINATION --------- */
 
 .pagination {
 	margin: var(--spacing) 0 0 0;
