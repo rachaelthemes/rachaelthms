@@ -1,0 +1,468 @@
+section#posts {
+	margin: 0 auto;
+	width: calc(100% - (var(--spacing)*2));
+	background: var(--lightish);
+	padding: var(--spacing);
+	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big.png');
+	background-size: 100%;
+	background-position: 0 -5%;
+	background-repeat: repeat;
+}
+
+body.dark section#posts {
+	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
+}
+
+article {
+	margin: 0 auto var(--spacing) auto;
+	background: var(--light);
+	width: 700px;
+	border-radius: 10px;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+article:last-child {
+	margin-bottom: 0;
+}
+
+a.deactivated {
+	cursor: default !important;
+}
+
+.quote-source a,
+.post-reblog-item a,
+.post-caption a {
+	text-decoration: underline;
+}
+
+main img {
+	max-width: 100%;
+	margin: 0;
+	line-height: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 1em 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+.post-reblog-item {
+	padding: 30px 30px 10px 30px;
+	border-top: 1px var(--lightish) solid;
+}
+
+.post-reblog-item:first-child {
+	border-top: none;
+}
+
+.reblog-item-avatar img {
+	height: 32px;
+	width: 32px;
+	border-radius: 6px;
+	float: left;
+	margin-right: 15px;
+}
+
+.reblog-item-username {
+	height: 32px;
+	font-weight: 600;
+	line-height: 32px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.reblog-item-username a {
+	text-decoration: none;
+}
+
+.reblog-item-username .deactivated {
+	cursor: default;
+}
+
+.post-reblog-item figure,
+.post-caption figure {
+	margin: 1em 0;
+}
+
+.post-quote .post-reblog-list,
+.post-chat .post-reblog-list {
+	display: none;
+}
+
+.post-reblog-item,
+.post-caption {
+	line-height: 1.6em;
+}
+
+.post-caption {
+	padding: 5px 30px 0;
+}
+
+p.tmblr-attribution {
+	display: none !important;
+}
+
+article h1,
+article h2 {
+	margin: .75em 0
+}
+
+h2.post-title {
+	font-size: 36px;
+	font-weight: 400;
+	padding: 30px 30px 0;
+	margin: 0 0 -10px 0;
+	line-height: 140%;
+}
+
+.post-reblog-item h1,
+.post-reblog-item h2,
+.post-caption h1,
+.post-caption h2 {
+	font-size: 22px;
+	line-height: 140%;
+	margin: .75em 0;
+}
+
+.post-reblog blockquote,
+.post-caption blockquote {
+	border-left: 1px var(--lightish) solid;
+	margin: 1em 0 1em 0.25em;
+	padding-left: 30px;
+}
+
+article:not(.has-date) .post-caption {
+	padding: 10px 30px 20px;
+}
+
+article.post img {
+	max-width: 100%;
+	height: auto;
+}
+
+.photoset-container {
+	line-height: 0;
+}
+
+article div.npf_row {
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	line-height: 0 !important;
+}
+
+article p {
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+a.link {
+	background: var(--blue);
+	display: block;
+	position: relative;
+	color: var(--white);
+}
+
+.link-thumbnail {
+	position: relative;
+}
+
+.link-thumbnail img {
+	width: 100% !important;
+}
+
+.link-thumbnail::after {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), transparent 50%);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent 50%);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.link-text-wrapper {
+	padding: 30px;
+}
+
+.link-host {
+	font-weight: 700;
+	font-size: 0.875em;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+}
+
+.link-container.thumb .link-host {
+	margin: 30px;
+	color: var(--white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.link-title {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1.25em;
+}
+
+.link-excerpt {
+	margin: 15px 0 0 0;
+	font-size: 0.875em;
+	line-height: 1.5;
+}
+
+#question-container {
+	margin-bottom: -30px;
+}
+
+#answer-container {
+	margin-top: 60px;
+}
+
+.post-answer .post-reblog-list .post-reblog-item:first-child {
+	margin-top: -19px;
+}
+
+.post-question {
+	position: relative;
+	background: var(--blue);
+	margin: 30px 98px 30px 30px;
+	padding: 30px;
+	color: var(--white);
+	border-radius: 6px;
+}
+
+.post-reply {
+	background: var(--lightish);
+	color: var(--dark);
+}
+
+.post-question p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.asker {
+	margin-bottom: 1em;
+}
+
+.post-question:after {
+	content: '';
+	position: absolute;
+	right: -5px;
+	top: 20px;
+	height: 10px;
+	width: 10px;
+	background-color: var(--blue);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.post-reply::after {
+	background-color: var(--lightish);
+}
+
+img.asker-avatar {
+	float: right;
+	top: 0;
+	margin-right: 30px;
+	border-radius: 6px;
+	width: 48px;
+	height: 48px;
+}
+
+.post-metadata {
+	width: calc(100% - 60px);
+	padding: 0 30px;
+	margin-bottom: 13px;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	opacity: 0.7;
+}
+
+a.meta-item {
+	color: var(--lightish-text);
+	margin-right: 10px;
+}
+
+a.meta-item:hover {
+	color: var(--blue);
+}
+
+.post-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	-webkit-box-orient: horizontal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	clear: both;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: relative;
+	width: calc(100% - 60px);
+	height: auto;
+	padding: 0 30px 25px 30px;
+	color: var(--lightish-text);
+	font-size: 0.875em;
+	line-height: 1.25em;
+}
+
+.post-footer a {
+	font-weight: 700;
+}
+
+.post-footer a:hover {
+	color: var(--blue);
+}
+
+.post-footer a.post-notes {
+	margin-left: 1px;
+}
+
+.post-footer>div {
+	display: inline-block;
+}
+
+.post-controls .control .like_button::before,
+.post-controls .control .reblog_button::before {
+	display: none;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 400;
+}
+
+.post-controls .reblog_button:before {
+	content: "\f364";
+}
+
+.post-controls .like_button:before {
+	content: "\f004";
+}
+
+.post-controls .control {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 24px;
+	margin-left: 15px;
+	height: 24px;
+	width: 24px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.reblog_button svg:not(.svg-inline--fa) {
+	display: none;
+}
+
+.post-controls .like_button iframe {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+.post-controls .control .like_button:hover,
+.post-controls .control .reblog_button:hover {
+	color: var(--med);
+}
+
+.post-controls .like_button.liked,
+.post-controls .like_button.liked:hover {
+	color: #d75f45;
+}
+
+article.notes-container {
+	background: var(--light);
+	overflow: hidden;
+}
+
+article.notes-container ol.notes {
+	list-style-type: none !important;
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding: 10px 0;
+	font-size: 0.875em;
+	color: var(--lightish-text);
+}
+
+article.notes-container ol.notes img.avatar {
+	height: 32px;
+	width: 32px;
+	border-radius: 6px;
+}
+
+ol.notes a.avatar_frame {
+	float: left;
+	margin: -5px 12px 0 0;
+}
+
+ol.notes li {
+	min-height: 23px;
+	margin: 0;
+	padding: 20px 25px;
+}
+
+ol.notes li::before {
+	display: none;
+}
+
+ol.notes .note a {
+	font-weight: 700;
+}
+
+ol.notes blockquote {
+	border-left: 1px solid var(--lightish);
+	font-size: inherit;
+	line-height: 1.5em;
+	margin: 15px 15px 0 50px;
+	quotes: none;
+	padding: 0 0 0 10px;
+}
+
+ol.notes .note blockquote a {
+	font-weight: 400;
+}
+
+.pagination {
+	margin: var(--spacing) 0 0 0;
+	text-align: center;
+}
+
+.pagination a {
+	display: inline-block;
+	margin: 0 calc(var(--spacing)/2);
+	background: var(--blue);
+	color: var(--white);
+	padding: 15px 20px;
+	border-radius: 6px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.pagination a:hover {
+	background: var(--green);
+}
