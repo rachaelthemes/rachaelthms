@@ -1,3 +1,10 @@
+// location replace
+
+if (location.href == 'https://rachaelthemes.com/ask') location.replace('https://rachaelthemes.com/help');
+if (location.href == 'https://rachaelthemes.com/submit') location.replace('https://rachaelthemes.com/help');
+
+// dark mode cookies (using js.cookie)
+
 var dm = Cookies.get("dark");
 
 function darkOn() {
@@ -29,6 +36,9 @@ jQuery(document).ready(function() {
             darkOff();
         }
     });
+    
+    // mobile nav open/close trigger
+    
     $('#mobile-open').click(function() {
         $('#mobile-nav').fadeIn(300);
     });
