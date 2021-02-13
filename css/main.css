@@ -1,3 +1,42 @@
+/* -- Space Grotesk © Florian Karsten 
+      https://fonts.floriankarsten.com/space-grotesk -- */
+
+@font-face { 
+	font-family: 'Space Grotesk'; 
+	src: url('https://rachaelthemes.github.io/rachaelthms/fonts/spacegrotesk-light.otf'); 
+	font-style: normal; 
+	font-weight: 300; 
+} 
+
+@font-face { 
+	font-family: 'Space Grotesk'; 
+	src: url('https://rachaelthemes.github.io/rachaelthms/fonts/spacegrotesk-regular.otf'); 
+	font-style: normal; 
+	font-weight: 400; 
+} 
+
+@font-face { 
+	font-family: 'Space Grotesk'; 
+	src: url('https://rachaelthemes.github.io/rachaelthms/fonts/spacegrotesk-medium.otf'); 
+	font-style: normal; 
+	font-weight: 500; 
+} 
+
+@font-face { 
+	font-family: 'Space Grotesk'; 
+	src: url('https://rachaelthemes.github.io/rachaelthms/fonts/spacegrotesk-semibold.otf'); 
+	font-style: normal; 
+	font-weight: 600; 
+} 
+
+@font-face { 
+	font-family: 'Space Grotesk'; 
+	src: url('https://rachaelthemes.github.io/rachaelthms/fonts/spacegrotesk-bold.otf'); 
+	font-style: normal; 
+	font-weight: 700; 
+}
+
+
 /* -- TUMBLR CONTROLS ---- */
 
 .tmblr-iframe,
