@@ -1,1 +1,145 @@
+/* -- INTRO -------------- */
 
+#intro {
+    margin-top: 0;
+    overflow: hidden;
+    background: var(--lightish);
+    background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern.png");
+    background-repeat: no-repeat;
+    background-position: 100% 53%;
+    background-size: 55%;
+}
+
+body.dark #intro {
+    background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
+}
+
+.intro-text { 
+	width: 50%; 
+}
+
+.intro-text h1 { 
+	font-size: 3vw;
+	line-height: 1.375em; 
+}
+
+.intro-text h1 b { 
+	color: var(--blue); 
+}
+
+.est {
+    margin-top: 30px;
+    color: var(--lightish-text);
+}
+
+/* -- FEATURED POSTS ----- */
+
+#featured {
+    padding: calc(var(--spacing)/2) var(--spacing);
+}
+
+.featured-posts {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: calc(var(--spacing)/2);
+}
+
+a.update {
+    width: calc(33% - (var(--spacing)/2) - 80px);
+    border: 2px var(--blue) solid;
+    border-radius: 6px;
+    padding: 40px;
+    background: transparent;
+}
+
+a.update:hover {
+    background: var(--lightish);
+}
+
+a.update .u-date {
+    float: right;
+    margin-top: -52px;
+    background: var(--blue);
+    padding: 5px 10px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    margin-right: -32px;
+    color: var(--white);
+}
+
+a.update h4 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+
+a.update p {
+    margin: 0;
+}
+
+a.update.dead {
+    background: var(--lightish);
+    cursor: default;
+    border-color: var(--lightish);
+}
+
+/* -- NEWEST THEME ------- */
+
+#themes {
+    padding: var(--spacing);
+    background: var(--darkish);
+    color: var(--white);
+}
+
+#themes .section-title {
+    margin-bottom: calc(var(--spacing)/2);
+}
+
+#themes .themes {
+    display: flex;
+    flex-flow; row nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#themes .themes.alt {
+	flex-flow: row-reverse nowrap;
+}
+
+#themes.top-border {
+	border-top: 1px rgba(255,255,255,0.1) solid;
+}
+
+#themes.first-theme>.container {
+	padding-top: 0 !important;
+}
+
+#themes .themes .theme-image, #themes .themes .theme-description {
+	width: calc(50% - (var(--spacing)/2));
+}
+
+.theme-image {
+	line-height: 0;
+}
+
+.theme-image>img {
+	border-radius: 5px;
+	width: 100%;
+}
+
+.theme-description h4 {
+	font-size: 1.75em;
+	line-height: 1.2em;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.theme-description ul {
+	margin-bottom: 30px;
+}
