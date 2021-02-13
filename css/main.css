@@ -349,6 +349,24 @@ a.more-link:hover svg {
 }
 
 
+/* -- POSTS SECTION ------ */
+
+section#posts {
+	margin: 0 auto;
+	width: calc(100% - (var(--spacing)*2));
+	background: var(--lightish);
+	padding: var(--spacing);
+	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big.png');
+	background-size: 100%;
+	background-position: 0 -5%;
+	background-repeat: repeat;
+}
+
+body.dark section#posts {
+	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
+}
+
+
 /* -- INTRO -------------- */
 
 #intro {
