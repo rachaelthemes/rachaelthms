@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 
 $('#screen').show();
 window.onload = function() {
-    $('#screen').fadeOut(500);
+    $('#screen').fadeOut(300);
 };
 
 $(document).on("click", "a.internal", function() {
@@ -27,7 +27,7 @@ $(document).on("click", "a.internal", function() {
         location.hash = redirect;
         return;
     }
-    $("#screen").fadeIn(500, function() {
+    $("#screen").fadeIn(300, function() {
         location = redirect;
        });
     return false;
