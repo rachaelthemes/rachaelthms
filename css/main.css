@@ -591,6 +591,40 @@ a.update.dead {
 	color: var(--blue);
 }
 
+.content {
+	max-width: 900px;
+}
+
+.tumblr-code .pre {
+	background: #1c2129;
+	color: #fff;
+	padding: 0.3em 0.5em;
+	border-radius: 5px;
+	white-space: normal;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.tumblr-code p.pre {
+	padding: 1.5em;
+	line-height: 1.8em;
+	margin-top: 1.5em !important;
+	word-wrap: break-word;
+}
+
+.tumblr-code span { 
+	font-weight: inherit !important; 
+	letter-spacing: 0px !important;
+}
+
+.tumblr-code .green { color: #00cf35; }
+.tumblr-code .gray { color: #777e87; }
+.tumblr-code .orange { color: #ff8a00; }
+.tumblr-code .purple { color: #7c5cff; }
+.tumblr-code .blue { color: #00b8ff; }
+.tumblr-code .red { color: #ff492f; }
+
 
 /* -- FOOTER ------------- */
 
