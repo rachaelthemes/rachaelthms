@@ -541,6 +541,10 @@ section#themes .section-title {
 	background: var(--lightish);
 }
 
+.content {
+	max-width: 900px;
+}
+
 #content h1,
 .content h2,
 .content h3 {
@@ -573,13 +577,12 @@ section#themes .section-title {
 	opacity: 0.2;
 }
 
-.content img {
-	border-radius: 6px;
+.content p {
+	margin: 1em 0;
 }
 
-.content p span {
-	font-weight: 600;
-	letter-spacing: 1px;
+.content b {
+	font-weight: 500;
 }
 
 .content p a {
@@ -587,16 +590,18 @@ section#themes .section-title {
 	font-weight: 500;
 }
 
-.content b {
-	font-weight: 500;
-}
-
 .content p a:hover {
 	color: var(--blue);
 }
 
-.content {
-	max-width: 900px;
+.content img {
+	border-radius: 6px;
+}
+
+.updates p span {
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--blue);
 }
 
 /* tumblr code */
