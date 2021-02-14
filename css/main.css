@@ -73,12 +73,26 @@ body {
 	--spacing: 100px;
 }
 
-body.dark {
-	--light: #060606;
-	--lightish: #0e1011;
-	--lightish-text: #6e767d;
-	--dark: #ffffff;
-	--darkish: #0e1011;
+
+/* -- DARK MODE ---------- */
+
+@media (prefers-color-scheme: dark) {
+	body {
+    	--light: #060606;
+    	--lightish: #0e1011;
+    	--lightish-text: #6e767d;
+    	--dark: #ffffff;
+    	--darkish: #0e1011;
+	}
+	a.logo .logo-image {
+		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
+	}
+	section#posts {
+		background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
+	}
+	#intro {
+		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
+	}
 }
 
 
@@ -190,6 +204,19 @@ h6 {
 }
 
 
+/* -- LOAD SCREEN -------- */
+
+#screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	background: var(--light);
+}
+
+
 /* -- HEADER ------------- */
 
 header {
@@ -228,10 +255,6 @@ a.logo .logo-image {
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-}
-
-body.dark a.logo .logo-image {
-	background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
 }
 
 a.logo:hover .logo-image {
@@ -288,16 +311,6 @@ nav a.follow:hover {
 	border: 2px var(--blue) solid;
 	background: var(--blue);
 	color: var(--white);
-}
-
-
-/* dark mode button */
-
-nav a#dark-mode {
-	cursor: pointer;
-	font-size: 1.125em;
-	color: var(--dark);
-	padding-right: 0;
 }
 
 
@@ -401,10 +414,6 @@ section#posts {
 	background-repeat: repeat;
 }
 
-body.dark section#posts {
-	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
-}
-
 
 /* -- INTRO -------------- */
 
@@ -416,10 +425,6 @@ body.dark section#posts {
 	background-repeat: no-repeat;
 	background-position: 100% 53%;
 	background-size: 55%;
-}
-
-body.dark #intro {
-	background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
 }
 
 .intro-text {
