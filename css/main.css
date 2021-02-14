@@ -785,6 +785,7 @@ p.released span {
 	padding: 0 5px 0 7px;
 }
 
+.theme-button,
 .theme-buttons {
 	flex-shrink: 0;
 	display: flex;
