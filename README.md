@@ -8,7 +8,7 @@ this is where I keep all the code for my theme blog (https://rachaelthemes.com/)
 * https://jquery.com/
 
 **NPF Photoset Fix** by @glenthemes
-* https://glenthemes.tumblr.com/post/638038350689976320/npf-mobile-photoset-fix-by-glenthemes-photos
+* https://glenthemes.tumblr.com/post/638038350689976320/
   
 **tippy.js** by atomiks
 * https://github.com/atomiks/tippyjs
