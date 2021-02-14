@@ -541,50 +541,65 @@ section#themes .section-title {
 	background: var(--lightish);
 }
 
-#content h1 {
-	font-size: 2.5em;
-	font-weight: 500;
+#content h1,
+.content h2,
+.content h3 {
 	line-height: 1.5em;
+	font-weight: 500;
 	margin-bottom: 20px;
 }
 
-#content h2 {
-	font-weight: 500;
+#content h1 {
+	font-size: 2.5em;
+}
+
+.content h2 {
 	font-size: 1.5em;
-	line-height: 1.5em;
-	margin-bottom: 20px;
+}
+
+.content h3 {
+	font-size: 1.125em;
+	margin-top: 2em;
+	margin-bottom: 1.125em;
 	color: var(--blue);
 }
 
 #content hr {
-	width: 100px;
 	margin: 50px 0;
-	border: 0;
+	width: 100px;
 	height: 2px;
+	border: 0;
 	background: var(--lightish-text);
 	opacity: 0.2;
 }
 
-#content p {
-	margin: 0.5em 0;
+.content img {
+	border-radius: 6px;
 }
 
-#content p span {
+.content p span {
 	font-weight: 600;
 	letter-spacing: 1px;
 }
 
-#content a:not(.button) {
+.content p a {
 	text-decoration: underline;
+	font-weight: 500;
 }
 
-#content a:not(.button):hover {
+.content b {
+	font-weight: 500;
+}
+
+.content p a:hover {
 	color: var(--blue);
 }
 
 .content {
 	max-width: 900px;
 }
+
+/* tumblr code */
 
 .tumblr-code .pre {
 	background: #1c2129;
@@ -616,17 +631,7 @@ section#themes .section-title {
 .tumblr-code .blue { color: #00b8ff; }
 .tumblr-code .red { color: #ff492f; }
 
-#faq-content h2 {
-	color: var(--dark);
-}
-
-#content:not(.theme-content) h4 {
-	font-weight: 500;
-	margin-top: 2em;
-	margin-bottom: 1.125em;
-	font-size: 1.125em;
-	color: var(--blue);
-}
+/* faq */
 
 .faq {
 	margin-top: 50px;
@@ -642,29 +647,17 @@ section#themes .section-title {
 
 .faq-question svg {
 	margin-top: -2px;
-	font-size: 24px;
 	margin-left: -40px;
+	font-size: 24px;
 	color: var(--blue);
 }
 
 .faq-answer svg {
 	margin-top: -3px;
-	font-size: 34px;
 	margin-left: -38px;
+	font-size: 34px;
 	color: var(--lightish-text);
 	opacity: 0.6;
-}
-
-#faq-content b, #faq-content a {
-	font-weight: 500 !important;
-}
-
-.faq-answer p {
-	margin: 1em 0 !important;
-}
-
-.faq-answer img {
-	border-radius: 6px;
 }
 
 
