@@ -1030,7 +1030,7 @@ footer {
 		align-items: flex-start;
 	}
 	#themes .theme {
-		margin-top: calc(var(--spacing)/2);
+		margin-top: calc(var(--spacing)/2) !important;
 	}
 	.theme:not(:first-child) {
 		margin-top: calc(var(--spacing)*1.5);
