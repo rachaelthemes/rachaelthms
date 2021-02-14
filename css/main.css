@@ -553,40 +553,103 @@ section#themes .section-title {
 	margin-bottom: calc(var(--spacing)/2);
 }
 
-.themes {
+.theme {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#themes .theme {
+    margin: 0;
+}
+
+.theme:not(:first-child) {
+	margin-top: calc(var(--spacing)*0.75);
+}
+
+a.theme-thumb {
+	width: 300px;
+	flex-shrink: 0;
+	background: var(--light);
+	padding: 10px;
+	border-radius: 10px;
+	line-height: 0;
+}
+
+#themes a.theme-thumb {
+    padding: 0;
+}
+
+a.theme-thumb img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.theme-wrap {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 	justify-content: space-between;
+	flex-grow: 1;
 }
 
-.themes.alt {
-	flex-flow: row-reverse nowrap;
+.theme-info {
+	margin: 0 calc(var(--spacing)/2);
+	flex-grow: 1;
 }
 
-.themes .theme-image,
-.themes .theme-description {
-	width: calc(50% - (var(--spacing)/2));
+.theme-info h2 {
+	margin: 1em 0 0 0;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	letter-spacing: 1.5px;
+	line-height: 1em;
 }
 
-.theme-image {
-	line-height: 0;
+.theme-info p {
+	margin: 1em 0;
+	font-size: 0.875em;
+	max-width: 520px;
 }
 
-.theme-image>img {
-	border-radius: 5px;
-	width: 100%;
+p.released {
+	color: var(--gray);
 }
 
-.theme-description h4 {
-	font-size: 1.75em;
-	line-height: 1.2em;
-	font-weight: 500;
-	margin-bottom: 15px;
+p.released span {
+	padding: 0 5px 0 7px;
 }
 
-.theme-description ul {
-	margin-bottom: 30px;
+#themes p.released {
+    color: #858c92;
+}
+
+.theme-button,
+.theme-buttons {
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.theme-buttons a {
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 20px;
+	margin-right: 20px;
+	background: var(--light);
+	color: var(--gray);
+	border-radius: 100%;
+}
+
+a.info-button {
+	background: var(--blue);
+	color: var(--white);
+	margin-right: 0;
 }
 
 
@@ -720,95 +783,6 @@ section#themes .section-title {
 	font-size: 34px;
 	color: var(--gray);
 	opacity: 0.6;
-}
-
-/* themes */
-
-.theme {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.theme:not(:first-child) {
-	margin-top: calc(var(--spacing)*0.75);
-}
-
-a.theme-thumb {
-	width: 300px;
-	flex-shrink: 0;
-	background: var(--light);
-	padding: 10px;
-	border-radius: 10px;
-	line-height: 0;
-}
-
-a.theme-thumb img {
-	width: 100%;
-	border-radius: 4px;
-}
-
-.theme-wrap {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: space-between;
-	flex-grow: 1;
-}
-
-.theme-info {
-	margin: 0 calc(var(--spacing)/2);
-	flex-grow: 1;
-}
-
-.theme-info h2 {
-	margin: 1em 0 0 0;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	letter-spacing: 1.5px;
-	line-height: 1em;
-}
-
-.theme-info p {
-	margin: 1em 0;
-	font-size: 0.875em;
-	max-width: 520px;
-}
-
-p.released {
-	color: var(--gray);
-}
-
-p.released span {
-	padding: 0 5px 0 7px;
-}
-
-.theme-button,
-.theme-buttons {
-	flex-shrink: 0;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-}
-
-.theme-buttons a {
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	line-height: 38px;
-	font-size: 20px;
-	margin-right: 20px;
-	background: var(--light);
-	color: var(--gray);
-	border-radius: 100%;
-}
-
-a.info-button {
-	background: var(--blue);
-	color: var(--white);
-	margin-right: 0;
 }
 
 
@@ -993,6 +967,7 @@ footer {
 	.theme-info p {
 		max-width: 100%;
 	}
+	.theme-button,
 	.theme-buttons {
 		margin: 0.5em 0 1em var(--spacing);
 	}
@@ -1005,17 +980,6 @@ footer {
 	}
 	 :root {
 		--spacing: 40px;
-	}
-	#themes .themes,
-	#themes .themes.alt {
-		flex-flow: column wrap;
-	}
-	#themes .themes .theme-image,
-	#themes .themes .theme-description {
-		width: 100%;
-	}
-	#themes .theme-image {
-		margin: calc(var(--spacing)/2) 0 var(--spacing) 0;
 	}
 	footer {
 		flex-flow: column nowrap;
@@ -1069,12 +1033,16 @@ footer {
 	.theme-info {
 		margin: 0 0 0 10px;
 	}
+	.theme-button,
 	.theme-buttons {
 		margin: 0.5em 0 1em 10px;
 	}
 	a.theme-thumb {
 		width: calc(100% - 20px);
 		margin-bottom: 10px;
+	}
+	#themes a.theme-thumb {
+		width: 100%;
 	}
 }
 
