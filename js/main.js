@@ -14,7 +14,6 @@ jQuery(document).ready(function() {
     $('#mobile-close').click(function() {
         $('#mobile-nav').fadeOut(300);
     });
-    });
 });
 
 // page transitions
