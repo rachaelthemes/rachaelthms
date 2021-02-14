@@ -648,9 +648,8 @@ footer {
 	#intro {
 		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
 	}
-
 	#mobile-nav {
-		background: var(--light
+		background: var(--light);
 	}
 }
 
