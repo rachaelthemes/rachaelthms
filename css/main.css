@@ -74,28 +74,6 @@ body {
 }
 
 
-/* -- DARK MODE ---------- */
-
-@media (prefers-color-scheme: dark) {
-	body {
-    	--light: #060606;
-    	--lightish: #0e1011;
-    	--lightish-text: #6e767d;
-    	--dark: #ffffff;
-    	--darkish: #0e1011;
-	}
-	a.logo .logo-image {
-		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
-	}
-	section#posts {
-		background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
-	}
-	#intro {
-		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
-	}
-}
-
-
 /* -- LINKS -------------- */
 
 a {
@@ -648,6 +626,28 @@ footer {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+}
+
+
+/* -- DARK MODE ---------- */
+
+@media (prefers-color-scheme: dark) {
+	body {
+    	--light: #060606;
+    	--lightish: #0e1011;
+    	--lightish-text: #6e767d;
+    	--dark: #ffffff;
+    	--darkish: #0e1011;
+	}
+	a.logo .logo-image {
+		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
+	}
+	section#posts {
+		background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
+	}
+	#intro {
+		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
+	}
 }
 
 
