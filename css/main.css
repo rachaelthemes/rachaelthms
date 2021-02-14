@@ -575,11 +575,11 @@ section#themes .section-title {
 	letter-spacing: 1px;
 }
 
-#content a {
+#content a:not(.button) {
 	text-decoration: underline;
 }
 
-#content a:hover {
+#content a:not(.button):hover {
 	color: var(--blue);
 }
 
