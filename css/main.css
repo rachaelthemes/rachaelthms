@@ -506,7 +506,7 @@ section#themes .section-title {
 }
 
 #themes .themes:first-child {
-	padding-top: calc(var(--spacing)/2);
+	padding-top: 0;
 }
 
 #themes .themes.alt {
