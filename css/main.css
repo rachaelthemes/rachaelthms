@@ -763,7 +763,7 @@ a.info-button {
 
 #content.theme-page {
 	background: var(--light); 
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: calc(var(--spacing)/2) var(--spacing);
 }
