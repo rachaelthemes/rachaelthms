@@ -543,6 +543,55 @@ a.update.dead {
 }
 
 
+/* -- MISC PAGES --------- */
+
+#content {
+	margin-top: 0;
+	background: var(--lightish);
+}
+
+#content h1 {
+	font-size: 2.5em;
+	font-weight: 500;
+	line-height: 1.5em;
+	margin-bottom: 20px;
+}
+
+#content h2 {
+	font-weight: 500;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-bottom: 20px;
+	color: var(--blue);
+}
+
+#content hr {
+	width: 100px;
+	margin: 50px 0;
+	border: 0;
+	height: 2px;
+	background: var(--lightish-text);
+	opacity: 0.2;
+}
+
+#content p {
+	margin: 0.5em 0;
+}
+
+#content p span {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+#content a {
+	text-decoration: underline;
+}
+
+#content a:hover {
+	color: var(--blue);
+}
+
+
 /* -- FOOTER ------------- */
 
 #footer {
