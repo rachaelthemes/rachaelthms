@@ -138,6 +138,11 @@ p {
 
 /* -- LISTS -------------- */
 
+b,
+strong {
+	font-weight: 500;
+}
+
 ul {
 	display: block;
 	list-style-type: none;
