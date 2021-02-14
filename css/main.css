@@ -634,10 +634,10 @@ footer {
 @media (prefers-color-scheme: dark) {
 	body {
     	--light: #060606;
-    	--lightish: #0a0b0e;
+    	--lightish: #0d0f14;
     	--lightish-text: #6e767d;
     	--dark: #ffffff;
-    	--darkish: #0a0b0e;
+    	--darkish: #0d0f14;
 	}
 	a.logo .logo-image {
 		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
