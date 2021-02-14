@@ -759,6 +759,77 @@ a.info-button {
 	margin-right: 0;
 }
 
+/* -- THEME INFO PAGES --- */
+
+#content.theme-page {
+	background: var(--light); 
+	max-width: 900px;
+	margin: 0 auto;
+	padding: calc(var(--spacing)/2) var(--spacing);
+}
+
+.theme-image img {
+	max-width: 100%;
+	border-radius: 6px;
+}
+
+.theme-page .theme-wrap {
+	margin-top: calc(var(--spacing)*0.75);
+	align-items: flex-start;
+}
+
+.theme-nav {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 205px;
+	flex-shrink: 0;
+}
+
+.theme-nav .h4 {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 0.5em;
+}
+
+.theme-nav p {
+	margin: 0;
+}
+
+.theme-nav-buttons {
+	margin: 1em 0;
+}
+
+.theme-nav-buttons a.button {
+	margin: 0.5em 0;
+}
+
+p.disclaimer {
+	font-size: 0.875em;
+	line-height: 1.5em;
+}
+
+p.disclaimer a {
+	font-weight: 500;
+}
+
+.theme-details {
+	width: calc(100% - 205px - (var(--spacing)));
+}
+
+.theme-details p {
+	margin-top: 1.5em;
+	font-size: 1.125em;
+	line-height: 1.5em;
+	font-weight: 400;
+}
+
+.theme-details p:first-child {
+	margin-top: 0;
+}
+
 
 /* -- HELP DESK ---------- */
 
@@ -974,6 +1045,25 @@ footer {
 	.theme-button,
 	.theme-buttons {
 		margin: 0.5em 0 1em var(--spacing);
+	}
+	.theme-nav {
+		flex-flow: row wrap;
+		width: 100%;
+	}
+	.theme-nav p {
+		margin: 0 6px 0 0;
+	}
+	.theme-nav-buttons {
+		display: block;
+		width: 100%;
+		margin: 0.5em 0 0.75em 0;
+	}
+	.theme-nav-buttons a.button {
+		margin-right: 1em;
+	}
+	.theme-details {
+		width: 100%;
+		margin-top: calc(var(--spacing)*0.75);
 	}
 }
 
