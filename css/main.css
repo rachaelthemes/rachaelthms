@@ -532,11 +532,8 @@ section#posts {
 	margin: 1em 0;
 }
 
-.content b {
-	font-weight: 500;
-}
-
-.content p a {
+.content p a,
+.content li a {
 	text-decoration: underline;
 	font-weight: 500;
 }
