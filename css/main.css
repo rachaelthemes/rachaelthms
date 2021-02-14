@@ -487,13 +487,13 @@ a.update.dead {
 
 /* -- NEWEST THEME ------- */
 
-#themes {
+section#themes {
 	padding: var(--spacing);
 	background: var(--darkish);
 	color: var(--white);
 }
 
-#themes .section-title {
+section#themes .section-title {
 	margin-bottom: calc(var(--spacing)/2);
 }
 
