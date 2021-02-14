@@ -499,10 +499,14 @@ section#themes .section-title {
 
 #themes .themes {
 	display: flex;
-	flex-flow;
-	row nowrap;
+	flex-flow row nowrap;
 	align-items: center;
 	justify-content: space-between;
+	padding: var(--spacing) 0 0 0;
+}
+
+#themes .themes:first-child {
+	padding-top: calc(var(--spacing)/2);
 }
 
 #themes .themes.alt {
