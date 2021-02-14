@@ -509,14 +509,6 @@ section#themes .section-title {
 	flex-flow: row-reverse nowrap;
 }
 
-#themes.top-border {
-	border-top: 1px rgba(255, 255, 255, 0.1) solid;
-}
-
-#themes.first-theme>.container {
-	padding-top: 0 !important;
-}
-
 #themes .themes .theme-image,
 #themes .themes .theme-description {
 	width: calc(50% - (var(--spacing)/2));
@@ -629,7 +621,7 @@ section#themes .section-title {
 	color: var(--dark);
 }
 
-#content h4 {
+#content:not(.theme-content) h4 {
 	font-weight: 500;
 	margin-top: 2em;
 	margin-bottom: 1.125em;
