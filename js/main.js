@@ -7,6 +7,7 @@ if (location.href == 'https://rachaelthemes.com/submit') location.replace('https
 // mobile nav open/close trigger
 
 jQuery(document).ready(function() {
+    $('#screen').show();
     $('#mobile-open').click(function() {
         $('#mobile-nav').fadeIn(300);
     });
@@ -17,7 +18,6 @@ jQuery(document).ready(function() {
 
 // page transitions
 
-$('#screen').show();
 window.onload = function() {
     $('#screen').fadeOut(500);
 };
