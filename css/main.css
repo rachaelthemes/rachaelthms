@@ -298,7 +298,7 @@ main {
 	width: 100%;
 }
 
-main section {
+main section:not(#posts) {
 	margin: calc(var(--spacing)*0.75) var(--spacing);
 	padding: var(--spacing);
 	border-radius: 10px;
