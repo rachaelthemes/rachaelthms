@@ -679,13 +679,8 @@ a.theme-thumb {
 	width: 300px;
 	flex-shrink: 0;
 	background: var(--light);
-	padding: 10px;
 	border-radius: 10px;
 	line-height: 0;
-}
-
-#themes a.theme-thumb {
-    padding: 0;
 }
 
 a.theme-thumb img {
@@ -1135,11 +1130,8 @@ footer {
 		margin: 0.5em 0 1em 10px;
 	}
 	a.theme-thumb {
-		width: calc(100% - 20px);
-		margin-bottom: 10px;
-	}
-	#themes a.theme-thumb {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 }
 
