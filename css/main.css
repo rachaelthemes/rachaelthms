@@ -858,7 +858,7 @@ p.disclaimer a {
 
 /* -- FOOTER ------------- */
 
-#footer {
+main section#footer {
 	padding: calc(var(--spacing)/4) var(--spacing);
 }
 
