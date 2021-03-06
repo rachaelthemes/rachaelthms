@@ -7,6 +7,7 @@ article {
 	border-radius: 10px;
 	overflow: hidden;
 	max-width: 100%;
+	border: 2px var(--lightish) solid;
 }
 
 article:last-child {
