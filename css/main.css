@@ -481,9 +481,9 @@ nav a.follow:hover {
 section#posts {
 	margin: 0 auto;
 	width: calc(100% - (var(--spacing)*2));
-	background: var(--lightish);
+	/* background: var(--lightish); */
 	padding: var(--spacing);
-	background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big.png');
+	/* background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big.png'); */
 	background-size: 100%;
 	background-position: 0 -5%;
 	background-repeat: repeat;
@@ -959,7 +959,7 @@ footer {
 		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-alt.svg");
 	}
 	section#posts {
-		background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png');
+		/* background-image: url('https://rachaelthemes.github.io/rachaelthms/images/blueberry-big-alt.png'); */
 	}
 	#intro {
 		background-image: url("https://rachaelthemes.github.io/rachaelthms/images/blueberry-pattern-alt.png");
