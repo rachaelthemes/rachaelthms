@@ -752,6 +752,7 @@ a.info-button {
 	background: var(--blue);
 	color: var(--white);
 	margin-right: 0;
+	line-height: 38px;
 }
 
 /* -- THEME INFO PAGES --- */
